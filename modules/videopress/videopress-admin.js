@@ -465,7 +465,7 @@
 	var VideoPressModal = new VideoPressModalView();
 
 	// Configuration screen behavior
-	$(document).on( 'ready', function() {
+	$( document ).ready( function() {
 		var $form = $( '#videopress-settings' );
 
 		// Not on a configuration screen
@@ -486,7 +486,7 @@
 		});
 
 		$access.trigger( 'change' );
-	});
+	} );
 
 	// Media -> VideoPress menu
 	$(document).on( 'click', '#videopress-browse', function() {
