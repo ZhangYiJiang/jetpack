@@ -173,7 +173,7 @@ if ( sharing_js_options && sharing_js_options.counts ) {
 	} );
 
 	$body = $( document.body ).on( 'post-load', WPCOMSharing_do );
-	$( document ).on( 'ready', function() {
+	$( document ).ready( function() {
 		$sharing_email = $( '#sharing_email' );
 		$body.append( $sharing_email );
 		WPCOMSharing_do();
